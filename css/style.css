@@ -1,0 +1,15 @@
+/* reset */
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+/* general */
+body{
+    font-family: "Open Sans", sans-serif;
+}
