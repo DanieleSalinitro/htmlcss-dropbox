@@ -55,6 +55,11 @@ main{
     margin: 0 auto;
 }
 
+/* subscription section */
+.subscription{
+    width: calc(100% / 3 - 20px);
+}
+
 footer{
     background-color: blue;
 }
