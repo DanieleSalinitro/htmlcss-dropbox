@@ -8,6 +8,8 @@
 ul{
     list-style: none;
 }
+a{
+}
 
 /* general */
 body{
@@ -26,6 +28,17 @@ nav{
 #hero{
     background-color: green;
 }
+#left{
+    width: 30%;
+}
+
+#right{
+    width: 70%;
+}
+#right img{
+    width: 100%;
+} 
+
 main{
     background-color: grey;
 }
