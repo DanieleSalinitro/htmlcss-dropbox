@@ -13,3 +13,40 @@ ul{
 body{
     font-family: "Open Sans", sans-serif;
 }
+header{
+    background-color: red;
+    width: 100%;
+}
+
+nav{
+    padding: 20px;
+    width: 100%;
+}
+
+#hero{
+    background-color: green;
+}
+main{
+    background-color: grey;
+}
+
+.container{
+    max-width: 1200px;
+}
+
+.small-container{
+    max-width: 1000px;
+}
+
+footer{
+    background-color: blue;
+}
+/* utility flex */
+
+.d-flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
