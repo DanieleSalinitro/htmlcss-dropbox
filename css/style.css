@@ -115,14 +115,14 @@ nav{
 #hero{
     background-color: green;
 }
-#left{
+.secondary-side{
     width: 30%;
 }
 
-#right{
+.main-side{
     width: 70%;
 }
-#right img{
+.main-side img{
     width: 100%;
 } 
 /* main */
@@ -146,6 +146,9 @@ main{
     border: 1px solid #00000032;
     
 }
+.subscription-big{
+    border: 1px solid #00000032;
+}
 .title-business{
     text-align: center;
     border-bottom: 1px solid #00000032;
@@ -155,6 +158,9 @@ main{
 }
 .content-subscription{
     padding: 20px;
+}
+.text-right{
+    text-align: right;
 }
 
 /* footer */
