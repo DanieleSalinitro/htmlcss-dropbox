@@ -68,27 +68,24 @@ body{
 	--color-design-text: #f5f5f5;
 }
 
+section{
+    padding: 100px 0;
+}
+
 /* utility testi */
 h1{
-    font-size: 5em;
+    font-size: 4.5em;
+    font-weight: 900;
+    padding-top: 50px;
 }
 h2{
-    font-size: 3em;
-}
-h3{
-    font-size: 2em;
-}
-h4{
     font-size: 2.5em;
 }
-h5{
-    font-size: 2em;
-}
-h6{
-    font-size: 1em;
+h3{
+    font-size: 1.5em;
 }
 p{
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 /* utility bottone */
@@ -99,36 +96,58 @@ p{
     background-color: var(--color-main-button);
     color: var(--color-secondary);
     display: inline-block;
+    padding: 12px 24px;
+}
+
+.secondary-button{
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: var(--color-secondary);
+    color:var(--color-primary);
+    border: 1px solid var(--color-primary);
     padding: 6px 12px;
 }
 /* header */
 header{
-    background-color: red;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--color-secondary);
+    min-height: 80px;
 }
-
+header li{
+    padding-right: 20px;
+}
 nav{
     padding: 20px;
     width: 100%;
 }
 
 #hero{
-    background-color: green;
+    background-color: var(--color-hero);
+    margin-top: 80px;
 }
 .secondary-side{
     width: 30%;
 }
-
+#hero img{
+    width: 100%;
+}
 .main-side{
     width: 70%;
 }
 .main-side img{
     width: 100%;
 } 
-/* main */
-main{
-    background-color: grey;
+
+#hero a{
+    text-decoration: none;
+    font-size: 4em;
+    color: var(--color-primary);
 }
+/* main */
 
 .container{
     max-width: 1200px;
@@ -141,8 +160,12 @@ main{
 }
 
 /* subscription section */
+span.marginl{
+    margin-left: 10px;
+}
 .subscription{
     width: calc(100% / 3 - 20px);
+    min-width: 250px;
     border: 1px solid #00000032;
     
 }
@@ -152,20 +175,138 @@ main{
 .title-business{
     text-align: center;
     border-bottom: 1px solid #00000032;
+    padding: 12px;
 }
 .fa-check{
     color: var(--color-main-button);
 }
+.fa-ul {
+    list-style-type: none;
+    margin-left: var(--fa-li-margin, 1.5em);
+    padding-left: 0;
+}
 .content-subscription{
-    padding: 20px;
+    padding: 30px 20px;
 }
 .text-right{
     text-align: right;
 }
 
+#business h3{
+    padding-bottom: 25px;
+}
+#business ul{
+    padding-bottom: 25px;
+}
+#business li{
+    padding-bottom: 20px;
+}
+#business .container-btn{
+    margin-bottom: 40px;
+    background-color: var(--color-main-button);
+}
+#business .paddingb{
+    padding-bottom: 25px;
+}
+/* partner section */
+#partner .paddingtb{
+    padding: 40px 0;
+}
+#partner .paddingt{
+    padding-top: 40px;
+}
+
+#partner .main-side{
+    width: 60%;
+}
+#partner .secondary-side{
+    width: 40%;
+}
+.content-subscription li{
+    padding-bottom: 25px;
+}
+/* dropbox-business section */
+.db-business-card{
+    width: calc(100% / 3 - 30px);
+    min-width: 200px;
+}
+#dropbox-business img{
+    width: 100%;
+}
+#dropbox-business h3, #dropbox-business h2{
+    padding-bottom: 30px;
+}
+/* customers section */
+#customers h2{
+    padding-bottom: 60px;
+}
+
+/* design square section */
+#design{
+background-color: blueviolet;
+}
+/* call-to-action section */
+#call-to-action{
+    background-color: var(--color-hero);
+}
+#call-to-action .secondary-button{
+    border: none;
+    padding: 10px 35px;
+    font-size: 20px;
+}
+
+#call-to-action .main-side{
+    width: 50%;
+}
+
+#call-to-action .secondary-side{
+    width: 50%;
+    text-align: right;
+}
+/* faq section */
+#faq h2{
+    padding-bottom: 40px;
+}
+details{
+    border-top: 1px solid black;
+    padding: 50px 0;
+}
+
+details.last{
+    border-bottom: 1px solid black;
+}
+
+summary{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+
+#faq .fa-check{
+    color: var(--color-primary);
+}
+
+details[open] .fa-check{
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
 /* footer */
 footer{
-    background-color: blue;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+}
+footer li:first-child{
+    font-weight: 900;
+    padding-bottom: 40px;
+}
+footer hr{
+    margin-bottom: 20px;
+}
+footer li{
+    padding-bottom: 20px;
 }
 /* utility flex */
 
@@ -179,4 +320,13 @@ footer{
 
 .column{
     flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.align-center{
+    align-items: center;
+    align-content: center;
 }
