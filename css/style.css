@@ -241,10 +241,70 @@ span.marginl{
     padding-bottom: 60px;
 }
 
+
+
+
+
+
+
 /* design square section */
 #design{
-background-color: blueviolet;
+background-color: var(--color-design-text);
 }
+.square{
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+}
+.square img{
+    width: 100%;
+}
+
+#design{
+    padding: 0;
+}
+.group-square{
+    width: calc(100 / 3);
+    aspect-ratio: 1 / 1;
+}
+
+.design-square{
+    background-color: var(--color-design-it);
+}
+
+.arizona-square{
+    background-color: var(--color-arizona);
+}
+
+.florida-square{
+    background-color: var(--color-florida);
+}
+
+.topps-square{
+    background-color: var(--color-topps);
+}
+
+.bicycle-square{
+    background-color: var(--color-world-bicycle);
+}
+
+.hearst-square{
+    background-color: var(--color-hero);
+}
+.lonely-square{
+    background-color: var(--color-lonely-planet);
+}
+.design-square img, .arizona-square img, .florida-square img, .topps-square img, .bicycle-square img, .lonely-square img, .hearst-square img, .clear-square img{
+    filter: invert(1);
+}
+.clear-square{
+    background-color: var(--color-clear-channel);
+}
+
+
+
+
+
 /* call-to-action section */
 #call-to-action{
     background-color: var(--color-hero);
