@@ -28,7 +28,6 @@ ul{
 .marginr{
     margin-right: 60px;
 }
-
 .paddingtb{
     padding: 60px 0;
 }
@@ -46,6 +45,9 @@ ul{
 }
 .paddingr{
     padding-right: 60px;
+}
+.padding{
+    padding: 90px;
 }
 
 /* general */
@@ -68,15 +70,27 @@ body{
 	--color-design-text: #f5f5f5;
 }
 
+a{
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+a:hover:not(header a, .main-button a){
+    text-decoration: underline;
+}
+
 section{
     padding: 100px 0;
 }
 
+.hr-style{
+    color:rgba(0, 0, 0, 0.36);
+    width: 150px;
+}
 /* utility testi */
 h1{
     font-size: 4.5em;
     font-weight: 900;
-    padding-top: 50px;
 }
 h2{
     font-size: 2.5em;
@@ -117,6 +131,11 @@ header{
     background-color: var(--color-secondary);
     min-height: 80px;
 }
+
+header a:not(.main-button a){
+    color: var(--color-primary)
+}
+
 header li{
     padding-right: 20px;
 }
@@ -134,6 +153,13 @@ nav{
 }
 #hero img{
     width: 100%;
+}
+.relposition{
+    position: relative;
+    top: 120px;
+}
+#box-cta{
+    padding-bottom: 15px;
 }
 .main-side{
     width: 70%;
@@ -241,12 +267,6 @@ span.marginl{
     padding-bottom: 60px;
 }
 
-
-
-
-
-
-
 /* design square section */
 #design{
 background-color: var(--color-design-text);
@@ -262,7 +282,7 @@ background-color: var(--color-design-text);
 }
 
 .square:hover{
-    border: 20px solid black;
+    box-shadow: inset 0px 0px 0 30px #ffffff5c;
 }
 
 .square img{
