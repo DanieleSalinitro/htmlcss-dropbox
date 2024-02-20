@@ -254,8 +254,17 @@ background-color: var(--color-design-text);
 .square{
     width: 50%;
     height: 50%;
-    padding: 20px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
+
+.square:hover{
+    border: 20px solid black;
+}
+
 .square img{
     width: 100%;
 }
@@ -264,7 +273,7 @@ background-color: var(--color-design-text);
     padding: 0;
 }
 .group-square{
-    width: calc(100 / 3);
+    width: calc(100% / 3);
     aspect-ratio: 1 / 1;
 }
 
